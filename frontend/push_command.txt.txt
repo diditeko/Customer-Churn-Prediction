@@ -1,0 +1,14 @@
+#frontend
+git init
+
+heroku login -i
+
+heroku create nama_app
+
+git add .
+
+git commit -m "pesan commit"
+
+heroku git:remote -a nama_app
+
+git push heroku master

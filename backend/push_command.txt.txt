@@ -1,0 +1,10 @@
+# backend
+heroku login -i
+
+heroku create nama_app
+
+heroku container:login
+
+heroku container:push web -a nama_app
+
+heroku container:release web -a nama_app
